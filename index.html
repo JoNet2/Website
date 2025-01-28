@@ -39,7 +39,9 @@
         nav {
             background-color: #333;
             display: flex; /* Use flexbox to align tabs horizontally */
-            margin-bottom: 20px;
+            justify-content: space-evenly; /* Evenly space out the links */
+            width: auto; /* Let the nav take up only as much width as the content */
+            margin: 0 auto; /* Center the nav in the page */
         }
 
         nav a {
@@ -49,7 +51,6 @@
             cursor: pointer;
             display: block;
             text-align: center;
-            margin: 0; /* Remove extra margin between tabs */
         }
 
         nav a:hover {
@@ -97,6 +98,7 @@
             /* Stack tabs vertically on small screens */
             nav {
                 flex-direction: column; /* Stack vertically */
+                width: 100%; /* Ensure full width on small screens */
             }
 
             nav a {
